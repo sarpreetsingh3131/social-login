@@ -6,5 +6,9 @@
 		<h3>Your facebook id is <span th:text="${facebookProfile.id}"></span>!</h3>
 	</head>
 	<body>
+	<form action="/connect/facebook" method="DELETE">
+			<input type="hidden" name="scope" value="email" />
+			<p><button type="submit">Log out</button></p>
+		</form>
 	</body>
 </html>
